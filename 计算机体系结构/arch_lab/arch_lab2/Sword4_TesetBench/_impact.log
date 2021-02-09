@@ -1,0 +1,188 @@
+iMPACT Version: 14.7
+
+iMPACT log file Started on Wed Oct 21 14:28:22 2020
+
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: C:\qzh\SCPU\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+Welcome to iMPACT
+iMPACT Version: 14.7
+Project: C:\qzh\SCPU\\auto_project.ipf created.
+// *** BATCH CMD : setMode -bs
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: no JTAG device was found.
+AutoDetecting cable. Please wait.
+*** WARNING ***: When port is set to auto detect mode, cable speed is set todefault 6 MHz regardless of explicit arguments supplied for setting the baudrates
+PROGRESS_START - Starting Operation.
+Connecting to cable (Usb Port - USB21).
+Checking cable driver.
+ Source driver files not found.
+The Platform Cable USB is not detected. Please connect a cable.If a cable isconnected, please disconnect
+and reconnect to the usb port, follow the instructions in the 'Found NewHardware Wizard', then retry
+the Cable Setup operation.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT1).
+Checking cable driver.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS14:14:44, version = 1021.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT2).
+Checking cable driver.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS14:14:44, version = 1021.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT3).
+Checking cable driver.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS14:14:44, version = 1021.
+Cable connection failed.
+Connecting to cable (Parallel Port - LPT4).
+Checking cable driver.
+ Driver windrvr6.sys version = 10.2.1.0. WinDriver v10.21 Jungo (c) 1997 - 2010 Build Date: Aug 31 2010 x86_64 64bit SYS14:14:44, version = 1021.
+Cable connection failed.
+PROGRESS_END - End Operation.
+Elapsed time =      2 sec.
+Cable autodetection failed.
+WARNING:iMPACT:923 - Can not find cable, check cable setup !// *** BATCH CMD : addDevice -p 1 -file "D:/tmp/sword4-test-bench/mips_top.bit"
+'1': Loading file 'D:/tmp/sword4-test-bench/mips_top.bit' ...
+done.
+INFO:iMPACT:1777 - 
+   Reading C:/Xilinx/14.7/ISE_DS/ISE/kintex7/data/xc7k325t.bsd...
+INFO:iMPACT - Using CseAdapterBSDevice
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+UserID read from the bitstream file = 0xFFFFFFFF.
+Data width read from the bitstream file = 1.
+INFO:iMPACT:501 - '1': Added Device xc7k325t successfully.
+----------------------------------------------------------------------
+GUI --- Auto connect to cable...
+// *** BATCH CMD : setCable -port auto
+INFO:iMPACT - Digilent Plugin: Plugin Version: 2.4.4
+INFO:iMPACT - Digilent Plugin: found 1 device(s).
+INFO:iMPACT - Digilent Plugin: opening device: "JtagHs2", SN:201612300081
+INFO:iMPACT - Digilent Plugin: User Name: JtagHs2
+INFO:iMPACT - Digilent Plugin: Product Name: Digilent JTAG-HS2
+INFO:iMPACT - Digilent Plugin: Serial Number: 201612300081
+INFO:iMPACT - Digilent Plugin: Product ID: 30900152
+INFO:iMPACT - Digilent Plugin: Firmware Version: 0108
+INFO:iMPACT - Digilent Plugin: JTAG Port Number: 0
+INFO:iMPACT - Digilent Plugin: JTAG Clock Frequency: 10000000 Hz
+INFO:iMPACT - Current time: 2020/10/21 14:29:17
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   38.56 C, Min. Reading:   30.69 C, Max.Reading:   38.56 C
+1: VCCINT Supply: Current Reading:   1.022 V, Min. Reading:   1.022 V, Max.Reading:   1.025 V
+1: VCCAUX Supply: Current Reading:   1.793 V, Min. Reading:   1.790 V, Max.Reading:   1.799 V
+INFO:iMPACT - Creating XC7K325T device.
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     10 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2020/10/21 14:43:08
+Updating config file D:/tmp/sword4-test-bench/mips_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   36.10 C, Min. Reading:   35.61 C, Max.Reading:   38.56 C
+1: VCCINT Supply: Current Reading:   1.025 V, Min. Reading:   1.022 V, Max.Reading:   1.025 V
+1: VCCAUX Supply: Current Reading:   1.793 V, Min. Reading:   1.790 V, Max.Reading:   1.799 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =     10 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+INFO:iMPACT - Current time: 2020/10/21 14:57:44
+Updating config file D:/tmp/sword4-test-bench/mips_top.bit...
+INFO:iMPACT:2257 - Startup Clock has been changed to 'JtagClk' in the bitstream   stored in memory,
+   but the original bitstream file remains unchanged.
+// *** BATCH CMD : Program -p 1 
+Maximum TCK operating frequency for this device chain: 66000000.
+Validating chain...
+Boundary-scan chain validated successfully.
+1: Device Temperature: Current Reading:   36.10 C, Min. Reading:   35.61 C, Max.Reading:   36.59 C
+1: VCCINT Supply: Current Reading:   1.025 V, Min. Reading:   1.022 V, Max.Reading:   1.025 V
+1: VCCAUX Supply: Current Reading:   1.793 V, Min. Reading:   1.790 V, Max.Reading:   1.796 V
+PROGRESS_START - Starting Operation.
+'1': Programming device...
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+done.
+INFO:Cse - Status register values:
+INFO:Cse - 0011 1111 1001 1110 0000 1000 0000 0010 
+INFO:Cse - '1': Completed downloading bit file to device.
+INFO:Cse - '1': Programming completed successfully.
+PROGRESS_END - End Operation.
+Elapsed time =      9 sec.
+ Match_cycle = NoWait.
+Match cycle: NoWait
+ LCK_cycle = NoWait.
+LCK cycle: NoWait
+INFO:iMPACT - '1': Checking done pin....done.
+'1': Programmed successfully.
+Project: 'C:\qzh\SCPU\\auto_project.ipf' created.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : saveProjectFile -file "C:\qzh\SCPU\\auto_project.ipf"
+// *** BATCH CMD : setMode -bs
+INFO:iMPACT - Launching WebTalk, please refer to the webtalk log at   C:\qzh\SCPU\webtalk.log for details.
+INFO:iMPACT - Running wbtc successfully.
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : deleteDevice -position 1
+// *** BATCH CMD : setMode -bs
+// *** BATCH CMD : setMode -ss
+// *** BATCH CMD : setMode -sm
+// *** BATCH CMD : setMode -hw140
+// *** BATCH CMD : setMode -spi
+// *** BATCH CMD : setMode -acecf
+// *** BATCH CMD : setMode -acempm
+// *** BATCH CMD : setMode -pff

@@ -1,0 +1,34 @@
+Running: C:\Xilinx\14.7\ISE_DS\ISE\bin\nt64\unwrapped\fuse.exe -intstyle ise -incremental -lib unisims_ver -lib unimacro_ver -lib xilinxcorelib_ver -lib secureip -o C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/sim_mips_isim_beh.exe -prj C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/sim_mips_beh.prj work.sim_mips work.glbl 
+ISim P.20131013 (signature 0x7708f090)
+Number of CPUs detected in this system: 8
+Turning on mult-threading, number of parallel sub-compilation jobs: 16 
+Determining compilation order of HDL files
+Analyzing Verilog file "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/ipcore_dir/icache.v" into library work
+Analyzing Verilog file "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/decoder.v" into library work
+Analyzing Verilog file "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/alu.v" into library work
+Analyzing Verilog file "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/arc_cpu.v" into library work
+Analyzing Verilog file "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/arc_cpu_wrap.v" into library work
+Analyzing Verilog file "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/sim_mips.v" into library work
+Analyzing Verilog file "C:/Xilinx/14.7/ISE_DS/ISE//verilog/src/glbl.v" into library work
+Starting static elaboration
+WARNING:HDLCompiler:1016 - "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/arc_cpu_wrap.v" Line 24: Port address is not connected to this instance
+WARNING:HDLCompiler:189 - "C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/arc_cpu.v" Line 100: Size mismatch in connection of port <addra>. Formal port size is 8-bit while actual signal size is 30-bit.
+Completed static elaboration
+Compiling module BLK_MEM_GEN_V7_3_output_stage(C_...
+Compiling module BLK_MEM_GEN_V7_3_softecc_output_...
+Compiling module BLK_MEM_GEN_V7_3_mem_module(C_CO...
+Compiling module BLK_MEM_GEN_V7_3(C_FAMILY="kinte...
+Compiling module icache
+Compiling module decoder
+Compiling module alu
+Compiling module arc_cpu
+Compiling module arc_cpu_wrap
+Compiling module sim_mips
+Compiling module glbl
+Time Resolution for simulation is 1ps.
+Waiting for 1 sub-compilation(s) to finish...
+WARNING:Simulator - Unable to copy libPortabilityNOSH.dll to the simulation executable directory: boost::filesystem::copy_file: 系统找不到指定的路径。, "isim\sim_mips_isim_beh.exe.sim\libPortability.dll".
+Compiled 11 Verilog Units
+Built simulation executable C:/depository/Arch/cpu_arc/Lab2/Sword4_TesetBench/sim_mips_isim_beh.exe
+Fuse Memory Usage: 32964 KB
+Fuse CPU Usage: 624 ms

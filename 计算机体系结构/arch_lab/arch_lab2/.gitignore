@@ -1,0 +1,4 @@
+/ip/icache/*
+/ip/dcache/*
+!/ip/icache/icache.xci
+!/ip/dcache/dcache.xci
